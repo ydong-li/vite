@@ -1032,6 +1032,11 @@
     jest-diff "^26.0.0"
     pretty-format "^26.0.0"
 
+"@types/js-yaml@^4.0.0":
+  version "4.0.0"
+  resolved "http://npm.caicloud.xyz/@types%2fjs-yaml/-/js-yaml-4.0.0.tgz#d1a11688112091f2c711674df3a65ea2f47b5dfb"
+  integrity sha1-0aEWiBEgkfLHEWdN86ZeovR7Xfs=
+
 "@types/less@^3.0.2":
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/@types/less/-/less-3.0.2.tgz#2761d477678c8374cb9897666871662eb1d1115e"
@@ -1485,6 +1490,11 @@ argparse@^1.0.7, argparse@~1.0.9:
   integrity sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==
   dependencies:
     sprintf-js "~1.0.2"
+
+argparse@^2.0.1:
+  version "2.0.1"
+  resolved "http://npm.caicloud.xyz/argparse/-/argparse-2.0.1.tgz#246f50f3ca78a3240f6c997e8a9bd1eac49e4b38"
+  integrity sha1-JG9Q88p4oyQPbJl+ipvR6sSeSzg=
 
 arr-diff@^4.0.0:
   version "4.0.0"
@@ -2848,6 +2858,14 @@ es-to-primitive@^1.2.1:
     is-callable "^1.1.4"
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
+
+esbuild-plugin-yaml@^0.0.1:
+  version "0.0.1"
+  resolved "http://npm.caicloud.xyz/esbuild-plugin-yaml/-/esbuild-plugin-yaml-0.0.1.tgz#660b9ddab78f4c3f488284762d6c01b6738615fb"
+  integrity sha1-Zgud2rePTD9IgoR2LWwBtnOGFfs=
+  dependencies:
+    fs-extra "^9.1.0"
+    js-yaml "^4.0.0"
 
 esbuild@^0.9.3:
   version "0.9.7"
@@ -4732,6 +4750,13 @@ js-stringify@^1.0.2:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
+
+js-yaml@4.0.0, js-yaml@^4.0.0:
+  version "4.0.0"
+  resolved "http://npm.caicloud.xyz/js-yaml/-/js-yaml-4.0.0.tgz#f426bc0ff4b4051926cd588c71113183409a121f"
+  integrity sha1-9Ca8D/S0BRkmzViMcRExg0CaEh8=
+  dependencies:
+    argparse "^2.0.1"
 
 js-yaml@^3.11.0, js-yaml@^3.13.1, js-yaml@^3.14.1:
   version "3.14.1"

@@ -15,6 +15,7 @@ import {
 import { esbuildDepPlugin } from './esbuildDepPlugin'
 import { ImportSpecifier, init, parse } from 'es-module-lexer'
 import { scanImports } from './scan'
+import { yamlPlugin } from 'esbuild-plugin-yaml'
 
 const debug = createDebugger('vite:deps')
 
@@ -245,7 +246,10 @@ export async function optimizeDeps(
     treeShaking: 'ignore-annotations',
     metafile: true,
     define,
-    plugins: [esbuildDepPlugin(flatIdDeps, flatIdToExports, config)]
+    plugins: [
+      esbuildDepPlugin(flatIdDeps, flatIdToExports, config),
+      yamlPlugin({})
+    ]
   })
 
   const meta = result.metafile!
